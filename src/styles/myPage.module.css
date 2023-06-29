@@ -1,0 +1,70 @@
+.backgroundImg {
+  height: 100vh;
+  background-image: url("../../public/img/kyoug.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 78% 78%;
+  opacity: 0.5;
+  position: relative;
+}
+
+.category {
+  padding: 20px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.category div {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 33vh;
+  left: 24vw;
+}
+
+.like {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+}
+.name {
+  text-align: center;
+  font-size: 74px;
+  font-weight: 900;
+}
+
+.title span {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 800;
+}
+.contents {
+  padding: 0px 220px;
+}
+.contentsTitle {
+  font-size: 70px;
+  font-weight: 800;
+  padding-bottom: 40px;
+  border-bottom: 3px solid red;
+}
+
+.projectType {
+  font-size: 24px;
+}
+.projectWrapper {
+  font-size: 24px;
+  padding-top: 40px;
+}

@@ -1,0 +1,63 @@
+.projectTitle {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.projectContent {
+  display: block;
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+.ExplainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.explain {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.skillWrapper {
+  display: flex;
+}
+.skill {
+  margin-left: 6px;
+  border-radius: 10px;
+  background-color: orange;
+}
+
+.highlightWrapper {
+  cursor: pointer;
+}
+.highlightWrapper:hover .highlight:after {
+  width: 100%;
+}
+.highlight {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 1px;
+  border-bottom: 2px solid rebeccapurple;
+}
+.highlight:after {
+  content: "";
+  width: 0;
+  height: 20px;
+  display: inline-block;
+  background: #d9fcdb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s all;
+}
+.highlightText {
+  background-color: rgb(220, 228, 110);
+}
+.explain span {
+  font-size: 18px;
+  display: block;
+}
