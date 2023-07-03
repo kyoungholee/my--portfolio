@@ -1,0 +1,69 @@
+.education {
+    padding: 0px 220px;
+  }
+  .educationTitle {
+    font-size: 60px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    margin: 40px 0;
+    border-bottom: 3px solid red;
+  }
+ 
+  .type {
+    font-size: 24px;
+  }
+  .name{
+    font-size: 34px;
+    font-weight: 900;
+    margin: 10px 0 20px 0;
+  }
+  .explain {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .education {
+      font-size: 26px;
+
+      padding: 0 80px;
+    }
+    .educationTitle{
+      line-height: 150%;
+      font-size: 40px;
+
+      font-weight: 800;
+    }
+  .name {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+    .explain{
+      gap: 4px;
+    }
+    .explain span {
+      font-size: 20px;
+
+    }
+  }
+  @media (max-width: 375px) {
+    .education {
+      padding: 0 44px;
+    }
+    .educationTitle{
+      font-size: 40px;
+
+    }
+    .name {
+      font-size: 19px;
+
+    }
+    .explain span {
+      font-size: 14px;
+
+    }
+  
+
+  }

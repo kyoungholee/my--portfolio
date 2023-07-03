@@ -1,63 +1,119 @@
+
+.imgWrapper{
+  position: relative;
+  margin-bottom: 60px;
+}
+
 .backgroundImg {
   height: 100vh;
-  background-image: url("../../public/img/kyoug.jpg");
+  background-image: url("../../public/img/jeju-kyoungho.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 78% 78%;
+  background-position: 75% 75%;
   opacity: 0.5;
   position: relative;
+
 }
 
 .category {
-  padding: 20px;
+  padding: 18px;
   position: fixed;
   top: 0%;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  background: white;
+  z-index: 10;
 }
-.category div {
+
+.category li {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+
 }
 
 .title {
   color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+.description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 33vh;
-  left: 24vw;
+  width: 100%;
+  height: 100%;
+
 }
 
-.like {
+.like, .name {
   font-size: 70px;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 20px;
 }
+
 .name {
-  text-align: center;
   font-size: 74px;
-  font-weight: 900;
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+  }
+  40% {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
+@keyframes fadeInright {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
+.like, .name {
+  position: relative;
+  animation: fadeInLeft 2.8s;
+}
+
+.description span {
+  position: relative;
+  animation: fadeInright 6s;
 }
 
 .title span {
   width: 100%;
   display: block;
   text-align: center;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: 800;
 }
 .contents {
   padding: 0px 220px;
+  margin-top: -56px;
+  padding-top: 56px;
+
 }
 .contentsTitle {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border-bottom: 3px solid red;
 }
 
@@ -67,4 +123,101 @@
 .projectWrapper {
   font-size: 24px;
   padding-top: 40px;
+}
+.contactWrapper{
+  padding: 0px 220px;
+}
+.contactTitle{
+  font-size: 60px;
+  font-weight: 800;
+  margin: 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid red;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 10p;
+}
+.info span {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .backgroundImg {
+  background-position: 50%;
+   
+  }
+  .contents{
+    padding: 0 90px;
+    margin-top: -56px;
+    padding-top: 56px;
+  }
+  .like {
+    font-size: 60px;
+
+  }
+
+  .name {
+    font-size: 64px;
+
+
+  }
+  .title span {
+    font-size: 26px;
+    padding: 0 80px;
+    line-height: 150%;
+
+
+  }
+  .contentsTitle{
+    font-size: 40px;
+
+  }
+}
+
+
+@media (max-width: 375px) {
+  .category{
+  position: relative;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  }
+ 
+
+  .backgroundImg{
+    height: 93vh;
+    width: 107vw;
+  }
+  .description{
+    height: 90%;
+    }
+
+    .like, .name {
+      font-size: 55px;
+  
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .name {
+      font-size: 45px;
+  
+    }
+    .contents {
+      padding: 0 44px;
+    }
+    .contentsTitle {
+      padding-top: 40px;
+      font-size: 40px;
+  
+      font-weight: 800;
+      padding-bottom: 20px;
+    }
 }
