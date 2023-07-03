@@ -169,11 +169,26 @@
     font-size: 26px;
     padding: 0 80px;
     line-height: 150%;
-
-
   }
   .contentsTitle{
     font-size: 40px;
+    padding-bottom: 30px;
+
+  }
+
+  .contactWrapper {
+    font-size: 26px;
+    margin-top: 40px;
+    padding: 0 80px;
+  }
+  .contactTitle{
+    line-height: 150%;
+    font-size: 40px;
+    font-weight: 800;
+  }
+ 
+  .info span {
+    font-size: 20px;
 
   }
 }
@@ -219,5 +234,18 @@
   
       font-weight: 800;
       padding-bottom: 20px;
+    }
+
+
+    .contactWrapper {
+      padding: 0 44px;
+    }
+    .contactTitle{
+      font-size: 40px;
+
+    }
+    .info span {
+      font-size: 14px;
+
     }
 }
