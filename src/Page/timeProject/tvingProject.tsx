@@ -35,10 +35,11 @@ export default function tvingProject() {
         <div className={style.explain}>
           <img src="/img/check.png" alt="체크이미지" />
           <div className={style.skillWrapper}>
-            기술 스택 :<span className={style.skill}>Vite(React)</span>
+            <span>기술 스택:</span>
+            <span className={style.skill}>Vite</span>
             <span className={style.skill}>moduleCSS</span>
             <span className={style.skill}>firebase</span>
-            <span className={style.skill}>recoil</span>
+
           </div>
         </div>
 

@@ -32,7 +32,8 @@ export default function chatProject() {
         <div className={style.explain}>
           <img src="/img/check.png" alt="체크이미지" />
           <div className={style.skillWrapper}>
-            기술 스택 : <span className={style.skill}>React</span>{" "}
+          <span>기술 스택: </span>
+          <span className={style.skill}>React</span>
             <span className={style.skill}>firebase</span>
           </div>
         </div>

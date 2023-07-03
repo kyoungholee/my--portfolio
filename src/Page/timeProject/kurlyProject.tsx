@@ -35,6 +35,7 @@ export default function kurlyProject() {
 
         <div className={style.explain}>
           <img src="/img/check.png" alt="체크이미지" />
+          <span>기술 스택: </span>
           <span className={style.skill}>HTML</span>
           <span className={style.skill}>CSS</span>
           <span className={style.skill}>JavaScript</span>
