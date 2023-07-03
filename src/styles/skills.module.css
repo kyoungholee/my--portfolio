@@ -28,13 +28,12 @@
   @media (max-width: 768px) {
     .skills {
       font-size: 26px;
-
+      margin-top: 40px;
       padding: 0 80px;
     }
     .skillsTitle{
       line-height: 150%;
       font-size: 40px;
-
       font-weight: 800;
     }
   .name {

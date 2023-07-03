@@ -13,8 +13,8 @@ import Skills from "./skills/skills";
 
 export default function MyPage() {
 
-  const projectRef =useRef<HTMLDivElement>(null);
-  const skillRef =useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
+  const skillRef = useRef<HTMLDivElement>(null);
 
 
   const onProjectClick = () => {
