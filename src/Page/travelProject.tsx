@@ -1,8 +1,9 @@
 import React from "react";
 import style from "../styles/personProject.module.css";
+import Checkimg from "../checkimg/checkimg";
 
 export default function travelProject() {
-  const TravelHandler = () => {
+  const travelHandler = () => {
     window.open("https://mbti-travel-test.netlify.app/");
   };
   return (
@@ -14,24 +15,24 @@ export default function travelProject() {
       </span>
       <article className={style.explainWrapper}>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <span>참여인원 : 1명(본인)</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
-          <div onClick={TravelHandler} className={style.highlightWrapper}>
+          <Checkimg />
+          <div onClick={travelHandler} className={style.highlightWrapper}>
             <span className={style.highlight}>배포사이트</span>
           </div>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <span>기간 : 2023.05.18 ~ 05.28</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <div className={style.skillWrapper}>
             <span>기술 스택: </span>
             <span className={style.skill}>React</span>
@@ -39,7 +40,7 @@ export default function travelProject() {
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               React에서 SEO를 만족하기 위해 React-helmet 적용
@@ -47,7 +48,7 @@ export default function travelProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               테스트 문항 클릭시 페이지가 자연스럽게 넘어갈 수 있게 css
@@ -56,7 +57,7 @@ export default function travelProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+          <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               useParmas를 이용해 동적라우팅 구현

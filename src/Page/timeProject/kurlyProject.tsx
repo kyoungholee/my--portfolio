@@ -1,8 +1,9 @@
 import React from "react";
 import style from "../../styles/personProject.module.css";
+import Checkimg from "../../checkimg/checkimg";
 
 export default function kurlyProject() {
-  const GitHandler = () => {
+  const gitHandler = () => {
     window.open("https://github.com/likelion-4fe-karly/karly-17-devfolio");
   };
 
@@ -15,26 +16,26 @@ export default function kurlyProject() {
       </span>
       <article className={style.explainWrapper}>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>참여인원 : 5명(팀장)</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
-            <span onClick={GitHandler} className={style.highlight}>
+            <span onClick={gitHandler} className={style.highlight}>
               Github
             </span>
           </div>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>기간 : 2023.01.31 ~ 02.08</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>기술 스택: </span>
           <span className={style.skill}>HTML</span>
           <span className={style.skill}>CSS</span>
@@ -42,7 +43,7 @@ export default function kurlyProject() {
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               회원가입 시 중복검사 후 랜덤한 uid값을 data.json에 저장 할 수 있게
@@ -51,7 +52,7 @@ export default function kurlyProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               시맨틱 UI를 고려해 최대한 웹 접근성을 신경씀
@@ -59,7 +60,7 @@ export default function kurlyProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               매일 오전 스크럼과 주간 회고를 하면서 문서화를 배우고 오류를

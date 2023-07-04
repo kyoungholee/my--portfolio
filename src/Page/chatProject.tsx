@@ -1,8 +1,9 @@
 import React from "react";
 import style from "../styles/personProject.module.css";
+import Checkimg from "../checkimg/checkimg";
 
 export default function chatProject() {
-  const ChatHandler = () => {
+  const chatHandler = () => {
     window.open("https://chat-project-dev.netlify.app/login");
   };
   return (
@@ -13,24 +14,24 @@ export default function chatProject() {
       </span>
       <article className={style.explainWrapper}>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>참여인원 : 1명(본인)</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
-          <div onClick={ChatHandler} className={style.highlightWrapper}>
+         <Checkimg />
+          <div onClick={chatHandler} className={style.highlightWrapper}>
             <span className={style.highlight}>배포사이트</span>
           </div>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>기간 : 2023.05.29 ~ 06.11</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.skillWrapper}>
           <span>기술 스택: </span>
           <span className={style.skill}>React</span>
@@ -39,7 +40,7 @@ export default function chatProject() {
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               firebase DB를 이용해 회원정보와 대화내용 관리 로직 구현
@@ -47,7 +48,7 @@ export default function chatProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               useContext훅을 이용해 다른 사람과 대화 할 수 있게 로직 구현
@@ -55,7 +56,7 @@ export default function chatProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               Timestamp를 이용해 메신저 전송시간을 실시간으로 표시

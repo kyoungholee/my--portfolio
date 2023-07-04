@@ -1,8 +1,9 @@
 import React from "react";
 import style from "../../styles/personProject.module.css";
+import Checkimg from "../../checkimg/checkimg";
 
 export default function tvingProject() {
-  const GitHandler = () => {
+  const gitHandler = () => {
     window.open("https://github.com/LAB13-REACT-TAING/LAB13-PROJECT/wiki");
   };
   return (
@@ -14,26 +15,26 @@ export default function tvingProject() {
       </span>
       <article className={style.explainWrapper}>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>참여인원 : 5명</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
-            <span onClick={GitHandler} className={style.highlight}>
+            <span onClick={gitHandler} className={style.highlight}>
               Github
             </span>
           </div>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <span>기간 : 2023.03.09 ~ 03.28</span>
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.skillWrapper}>
             <span>기술 스택:</span>
             <span className={style.skill}>Vite</span>
@@ -44,7 +45,7 @@ export default function tvingProject() {
         </div>
 
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               Swiper 라이브러리를 이용해 슬라이드 기능 구현
@@ -52,7 +53,7 @@ export default function tvingProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               firebase에 있는 DB를 이용해 데이터를 동적으로 받아 올 수 있도록
@@ -61,7 +62,7 @@ export default function tvingProject() {
           </div>
         </div>
         <div className={style.explain}>
-          <img src="/img/check.png" alt="체크이미지" />
+         <Checkimg />
           <div className={style.highlightWrapper}>
             <span className={style.highlight}>
               동적 라우팅을 이용해 이미지 클릭 시 상세 페이지 링크를 동적으로
