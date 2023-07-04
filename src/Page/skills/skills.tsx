@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../../styles/skills.module.css'
 import '../../App.css'
-import Checkimg from '../../checkimg/checkimg'
+import CheckImg from '../../checkImg/checkImg'
 
 export default function Skills() {
   return (
@@ -10,12 +10,12 @@ export default function Skills() {
     <div >
       <h2 className={style.name}>fronted</h2>
       <div className={style.explain}>
-        <Checkimg />
+        <CheckImg />
         <span>HTML, CSS, Javascript, React , Typescript, Next.js, emotion, Sass, styled-Component</span>
       </div>
       <h2 className={style.name}>backend</h2>
       <div className={style.explain}>
-        <Checkimg />
+        <CheckImg />
         <span>Node.js</span>
       </div>
 
