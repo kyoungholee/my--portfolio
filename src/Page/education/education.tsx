@@ -2,7 +2,6 @@ import React from 'react'
 import style from '../../styles/education.module.css'
 import '../../App.css'
 import CheckImg from '../../checkImg/checkImg'
-
 export default function Education() {
   return (
     <section className={style.education}>

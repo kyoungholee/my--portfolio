@@ -1,7 +1,6 @@
 import React from "react";
 import style from "../styles/personProject.module.css";
 import CheckImg from "../checkImg/checkImg";
-
 export default function travelProject() {
   const travelHandler = () => {
     window.open("https://mbti-travel-test.netlify.app/");
