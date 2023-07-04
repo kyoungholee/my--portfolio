@@ -72,8 +72,6 @@ export default function MyPage() {
           <span className={style.projectType}>💡팀프로젝트</span>
           <KurlyProject />
           <TvingProject />
-          <div>
-            지금 진행하려고 하는 프로젝트 적기(자유게시판, 중고마켓)</div>
         </div>
       </section>
       <Education />
