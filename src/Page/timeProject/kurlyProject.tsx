@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../styles/personProject.module.css";
-import CheckImg from "../../checkImg/checkImg";
+import CheckImg from "../../checkimg/checkimg";
 
 export default function kurlyProject() {
   const gitHandler = () => {
